@@ -15,8 +15,7 @@ def nodes(files):
   count = 0
   try:
     for file in files:
-      count += node(file)
-    return count
+      return count + node(file)
   except:
     return files
 
